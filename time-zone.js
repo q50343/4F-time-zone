@@ -7,7 +7,7 @@ function updatedTime() {
         })
         const timeZone = new Date(country)
         const month = new Date().toLocaleString("en-US", {
-            month: 'short'
+            timeZone: x.dataset.location,month: 'short'
         })
         x.querySelector(".date").innerText = `${timeZone.getDate()} ${month}.${timeZone.getFullYear()}`
 
